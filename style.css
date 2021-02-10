@@ -1,0 +1,671 @@
+#filter-cards-container{
+    display: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image:url("Img/League-of-Legends-Grieta.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#homepage{
+    height: 100vh;
+    margin-top: 10vh;
+}
+
+.allData{
+    padding-top: 50px;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-around;
+    flex-flow:row;
+    text-align: center;
+    padding: 30px 10px;
+    width: 100%;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: rgba(44, 66, 104, 0.58);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 80%;
+    height: 100%;
+    margin: 0px 70px 0px 30px;
+    padding: 20px 0px 20px 0px;
+}
+
+#one-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1rem 1rem;
+    width: 20%; 
+    height:100%; 
+    background-color: #0F474A; 
+    color: white;
+}
+
+.img-container{
+    width: 100%; 
+    height: 100%; 
+    text-align: center; 
+    margin-right: 0%;
+}
+
+#description{
+    font-family: 'Pirata One', cursive; 
+    font-size: 2em; 
+    text-align: center; 
+    margin: auto 0; 
+    width: 100%;
+    font-weight: lighter;
+}
+
+.one-container:hover{
+    transition:all 0.6s ease;
+    box-shadow: 0px 0px 10px 4px #57FEFF;
+    transform: scale(1.1);
+}
+
+h4{
+    text-align: center;
+}
+
+.filters {
+    width: 15%;
+    height: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+aside .cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+} 
+
+.meetChampions{
+    font-family: Righteous;
+    font-weight: bold;
+    font-size: 3.5em;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+.letter{
+    font-size: 2em;
+    margin-bottom: 2rem;
+}
+
+.style{
+    margin-bottom: 3rem;
+}
+
+.numChampions{
+    background: rgba(44, 66, 104, 0.58);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+    text-align: left;
+    color: #FFFCFC;
+    margin: 0px 232px;
+    width: 74.5%;
+    height: 3rem;
+    line-height: 3rem;
+    padding-left: 2rem;
+}
+
+.search-container{
+    width: 300px;
+    height: 50px;
+    border: none;
+    font-size: 10pt;
+    float: right;
+    color: #63717f;
+    line-height: 3.2rem;
+    padding-left: 4px;
+}
+
+/* .lupa{
+    width: 2rem;
+    height: 2rem;
+    background-color: white;
+    border: solid black;
+    margin-top: 10px;
+} */
+
+#buscar{
+    font-family: 'Righteous', cursive;
+    height: 2rem;
+    width: 12rem;
+    font-size: 1.3em;
+}
+
+h1{
+    font-family: 'Pirata One', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8.125rem;
+    text-align: center;
+    color: #D49220;
+    margin: 0px 18.75rem 0px;
+    -webkit-text-stroke: 0.125rem black;
+}
+
+h2{
+    margin-top: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 0;
+}
+
+/* .letterMeetChampions{
+    padding-bottom: 0;
+} */
+
+.text{
+    font-family: 'Righteous', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.25rem;
+    text-align: center;
+    color: #FFFCFC;
+    margin: 0px 18.75rem;
+}
+
+.buttonStart{
+    font-family: 'Righteous', cursive; 
+    display:block;
+    margin: auto;
+    padding: 0.9375rem;
+    min-width:9.375rem;
+    font-size: 0.875rem;
+    font-weight: 56.25rem;
+    color:black;
+    background-color: #29A8C3;
+    border: 0px;
+}
+
+.buttonStart:hover{
+    transition:all 0.6s ease;
+    box-shadow: 0px 0px 10px 4px rgba(255, 195, 0, 0.5), 0 0 20px rgba(255, 195, 0, 0.4);
+    text-shadow:0px 0px 20px 5px #F0C41A;
+    transform: scale(1.1);
+}
+
+header, footer{
+    background-color: #0D1618;
+    color: white;
+    font-family: "Righteous";
+    height: 3.75rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+}
+
+
+#styleFooter{
+    position: relative;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3.75rem;
+    margin-top: 5rem;
+    padding-top: 1em;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    float:right;
+    width: 100%;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: #F0C41A;
+}
+
+a:active {
+    color:#64FFFF;
+}
+
+#footer{
+    text-align: center;
+    font-size: small;
+}
+
+.logo{
+    display: table-cell;
+    vertical-align: middle;
+    width: 7em;
+}
+
+.categories{
+    text-align: justify;
+    padding: 1rem;
+    font-family:'Righteous', cursive;
+    color: white;
+    line-height: 2rem;
+    border: 10px solid rgba(44, 66, 104, 0.5);
+}
+
+.select{
+    width: 9.7rem;
+    height: 2rem;
+    font-family: 'Righteous', cursive;
+    font-size: 1em;
+    /* background-color: rgba(44, 66, 104, 0.5);
+    background-color: transparent;
+    border: 5px solid rgba(44, 66, 104, 0.5);
+    color: white; */
+}
+
+#uploadButton{
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+}
+
+.button{
+    display:scroll;
+    position:fixed;
+    top: 26rem;
+    bottom:20rem;
+    right: 0.5rem;
+}
+
+.pNoFound{
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-size: 2rem;
+}
+
+/*Aquí estamos trabajando responsive con medidas para 3 distintas pantallas*/
+
+/* @media only screen and (min-width: 780px) and (max-width: 1024px){ */
+@media only screen and (max-width: 1200px){
+    h1{
+    font-size: 7.5rem;
+    text-align: center;
+    margin: 0px 10.75rem 3rem;
+}
+
+    .text{
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+
+    .buttonStart{
+        margin: auto;
+        padding: 0.9375rem;
+        min-width:9.375rem;
+        font-size: 0.875rem;
+        font-weight: 56.25rem;
+    }
+
+    /* h2{
+        padding-bottom: 0;
+    } */
+
+    .numChampions{
+        text-align: left;
+        color: #FFFCFC;
+        margin: 0px 210px;
+        width: 71.5%;
+        height: 3rem;
+        line-height: 3rem;
+        padding-left: 2rem;
+    }
+
+    #uploadButton{
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 2rem;
+    }
+    
+    .button{
+        top: 36rem;
+        bottom:20rem;
+        right: 0.5rem;
+    }
+}
+
+@media screen and (min-width: 779px) and (max-width: 1000px){
+/* @media screen and (max-width: 905px){ */
+    h1{
+        font-size: 6.5rem;
+        text-align: center;
+        margin: 0px 7.75rem 0px;
+    }
+    .text{
+        font-size: 1.25rem;
+        text-align: center;
+        width: 45%;
+    }
+    .buttonStart{
+        margin: auto;
+        padding: 0.9375rem;
+        min-width:9.375rem;
+        font-size: 0.875rem;
+        font-weight: 56.25rem;
+    }
+    #uploadButton{
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-bottom: 1rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    .numChampions{
+        font-size: 1rem;
+        margin: 0px 200px;
+        width: 71.5%;
+        height: 3rem;
+        line-height: 3rem;
+        padding-left: 2rem;
+    }
+    .categories{
+        font-size: 0.9rem;
+        padding: 0 0;
+        width: 7.7rem;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    #homepage{
+        height: 100vh;
+        margin-top: 10vh;
+    }
+
+    .select{
+        width: 7.7rem;
+        height: 2rem;
+        font-family: 'Righteous', cursive;
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (min-width: 360px)and (max-width: 640px){
+
+
+    .logo{
+        width: 3rem;
+        padding-top: 0.5em;
+    }
+
+    .header{
+        height: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    header ul a{
+        font-size: 0.5em;
+    }
+
+    h1{
+        font-size: 5rem;
+        text-align: center;
+        margin: 3rem 3rem 2rem;
+        -webkit-text-stroke: 0.09rem black;
+
+    }
+
+    .text{
+        font-size: 1rem;
+        margin: 0px 1.75rem 0px;
+    }
+
+    .buttonStart{ 
+        padding: 0.7rem;
+        min-width:7.375rem;
+        font-size: 0.700rem;
+        font-weight: 50rem;
+        width: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    .title{
+        margin-top: 1em;
+    }
+    .meetChampions{
+        font-size: 1.5em;
+        margin-top: 0;
+    }
+    .numChampions{
+        font-size: 1rem;
+        margin: 0px 200px;
+        width: 30%;
+        height: 3rem;
+        line-height: 3rem;
+        padding-left: 2rem;
+    }
+
+    .letter{
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+
+    #uploadButton{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .columns{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        padding: 30px 10px;
+        width: 100%;
+    }
+
+    .filters {
+        width: 90%;
+        height: 100%;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 1em;
+    }
+
+    .select{
+        width: 100%;
+        font-size: 0.8em;
+        margin-bottom: 1em;
+    }
+    
+    .select option{
+        font-size: 0.6em;
+    }
+    .categories{
+        width: 98%;
+        margin: 1%;
+        padding-left: 30%;
+    }
+    
+    .cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: rgba(44, 66, 104, 0.58);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 100%;
+    margin: 0px 70px 0px 30px;
+    padding: 20px 0px 20px 0px;
+    }
+
+    #one-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 1rem 1rem;
+        width:90%; 
+        height:100%; 
+        background-color: #0F474A; 
+        color: white;
+    }
+
+    .searchAndNum{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+    }
+
+    .blue-box{
+        display: flex;
+        margin-top: 0;
+    }
+    .style{
+        margin-bottom: 0;
+    }
+
+    .numChampions{
+        /* flex-direction: column; */
+        /* padding-left: 40%; */
+        margin: 10%;
+        width: 100vw;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .search-container{
+        float: left;
+        padding-left: 25%;
+    }
+
+    .cards-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* aside .cards-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    /* #homepage{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    h1{
+        font-size: 5rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .text{
+        font-size: 0.9rem;
+        text-align: center;
+        width: 45%;
+        margin: 0;
+    }
+
+    .buttonStart{ */
+        /*padding: 0.9375rem;
+        min-width:9.375rem;*/
+        /* font-size: 0.700rem;
+        font-weight: 40rem;
+        width: 0.5rem;
+        align-items: center;
+    }
+
+    /*img{
+        width: 20%;
+
+    }
+
+    #uploadButton{ 
+        /* width: 2rem;
+        height: 2rem;
+        margin-bottom: 2rem; 
+    }
+
+    header,section, footer{
+        width: 100%;
+    }
+
+    #styleFooter{
+        position: relative;
+        margin-bottom: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3.75rem;
+        margin-top: 5rem;
+        padding-top: 1em;
+        margin-right: 0;
+    }*/
