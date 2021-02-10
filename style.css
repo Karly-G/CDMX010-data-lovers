@@ -141,8 +141,8 @@ aside .cards-container{
     font-size: 1.25rem;
     text-align: left;
     color: #FFFCFC;
-    margin: 0px 243px;
-    width: 75.2%;
+    margin: 0px 232px;
+    width: 74.5%;
     height: 3rem;
     line-height: 3rem;
     padding-left: 2rem;
@@ -323,31 +323,31 @@ a:active {
 
 /*Aquí estamos trabajando responsive con medidas para 3 distintas pantallas*/
 
-@media only screen and (max-width: 1200px){
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
     h1{
-    font-size: 7.5rem;
+    font-size: 10rem;
     text-align: center;
     margin: 0px 10.75rem 3rem;
 }
 
     .text{
-        font-size: 1.25rem;
-        margin-bottom: 2rem;
+        font-size: 2rem;
+        margin-bottom: 3rem;
     }
 
     .buttonStart{
         margin: auto;
-        padding: 0.9375rem;
-        min-width:9.375rem;
-        font-size: 0.875rem;
+        padding: 1.5rem;
+        min-width:10.7rem;
+        font-size: 1.3rem;
         font-weight: 56.25rem;
     }
 
     .numChampions{
         text-align: left;
         color: #FFFCFC;
-        margin: 0px 210px;
-        width: 71.5%;
+        margin: 0px 230px;
+        width: 74%;
         height: 3rem;
         line-height: 3rem;
         padding-left: 2rem;
@@ -360,7 +360,7 @@ a:active {
     }
     
     .button{
-        top: 36rem;
+        top: 55rem;
         bottom:20rem;
         right: 0.5rem;
     }
@@ -369,14 +369,15 @@ a:active {
 @media screen and (min-width: 779px) and (max-width: 1000px){
 
     h1{
-        font-size: 6.5rem;
+        font-size: 8rem;
         text-align: center;
-        margin: 0px 7.75rem 0px;
+        margin: 0px 7.75rem 2rem;
     }
     .text{
-        font-size: 1.25rem;
+        font-size: 1.7rem;
         text-align: center;
         width: 45%;
+        margin-bottom: 3rem;
     }
     .buttonStart{
         margin: auto;
@@ -390,6 +391,11 @@ a:active {
         height: 3.5rem;
         margin-bottom: 1rem;
     }
+
+    .button{
+        top: 40rem;
+    }
+
     h2{
         font-size: 1rem;
     }
